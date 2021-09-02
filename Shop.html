@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shoppage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+ /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 0px;
+      border-radius: 0;
+    }
+ 
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #000000;
+       border-radius: 0;
+    }
+  </style>
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Focus Fitness</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="active"><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+<div class="container bootdey">
+    <div class="col-md-3">
+        <section class="panel">
+            <div class="panel-body">
+                <input type="text" placeholder="Keyword Search" class="form-control" />
+            </div>
+        </section>
+        <section class="panel">
+            <header class="panel-heading">
+                Category
+            </header>
+            <div class="panel-body">
+                <ul class="nav prod-cat">
+                    <li>
+                        <a href="#" class="active"><i class="fa fa-angle-right"></i> Womens</a>
+                        <ul class="nav">
+                            <li class="active"><a href="#">- Tops</a></li>
+                            <li><a href="#">- Pants</a></li>
+                            <li><a href="#">- Accessories</a></li>
+                        </ul>
+                    </li>
+                    <a href="#" class="active"><i class="fa fa-angle-right"></i> Mens</a>
+                        <ul class="nav">
+                            <li class="active"><a href="#">- Tops</a></li>
+                            <li><a href="#">- Pants</a></li>
+                            <li><a href="#">- Accessories</a></li>
+                        </ul>
+                   
+                  
+                    <li>
+                        <a href="#"><i class="fa fa-angle-right"></i>Protein Powder and Shakes</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-angle-right"></i> Towels</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-angle-right"></i> Equipment</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-angle-right"></i> Sports</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-angle-right"></i> Technology</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-angle-right"></i> Accessories</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="panel">
+            <header class="panel-heading">
+                Price Range
+            </header>
+            <div class="panel-body sliders">
+                <div id="slider-range" class="slider"></div>
+                <div class="slider-info">
+                    <span id="slider-range-amount"></span>
+                </div>
+            </div>
+        </section>
+        <section class="panel">
+            <header class="panel-heading">
+                Filter
+            </header>
+            <div class="panel-body">
+                <form role="form product-form">
+                    <div class="form-group">
+                        <label>Brand</label>
+                        <select class="form-control hasCustomSelect" style="-webkit-appearance: menulist-button; width: 231px; position: absolute; opacity: 0; height: 34px; font-size: 12px;">
+                            <option>Focus Fitness</option>
+                            <option>Adiddas</option>
+                            <option>Nike</option>
+                            <option>Puma</option>
+                        </select>
+                        <span class="customSelect form-control" style="display: inline-block;"><span class="customSelectInner" style="width: 209px; display: inline-block;"></span></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Color</label>
+                        <select class="form-control hasCustomSelect" style="-webkit-appearance: menulist-button; width: 231px; position: absolute; opacity: 0; height: 34px; font-size: 12px;">
+                            <option>White</option>
+                            <option>Black</option>
+                            <option>Red</option>
+                            <option>Green</option>
+                        </select>
+                        <span class="customSelect form-control" style="display: inline-block;"><span class="customSelectInner" style="width: 209px; display: inline-block;"></span></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Type</label>
+                        <select class="form-control hasCustomSelect" style="-webkit-appearance: menulist-button; width: 231px; position: absolute; opacity: 0; height: 34px; font-size: 12px;">
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                            <option>Extra Large</option>
+                        </select>
+                        <span class="customSelect form-control" style="display: inline-block;"><span class="customSelectInner" style="width: 209px; display: inline-block;"></span></span>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Filter</button>
+                </form>
+            </div>
+        </section>
+        <section class="panel">
+            <header class="panel-heading">
+                Best Seller
+            </header>
+            <div class="panel-body">
+                <div class="best-seller">
+                    <article class="media">
+                        <a class="pull-left thumb p-thumb">
+                            <img src="img/hoodiefinal.jpg" class="img-responsive" />
+                        </a>
+                        <div class="media-body">
+                            <a href="#" class="p-head">Our Hoodie!</a>
+                            <p>Our Hoodie happens to also be our bestseller! Find out for yourself why its so popular!</p>
+                        </div>
+                    </article>
+                    <article class="media">
+                        <a class="pull-left thumb p-thumb">
+                            <img src="img/nike.jpg" class="img-responsive" />
+                        </a>
+                        <div class="media-body">
+                            <a href="#" class="p-head">Nike Revolutions</a>
+                            <p>Need a comfy shoe? Have a look at one of our bestsellers..</p>
+                        </div>
+                    </article>
+                    <article class="media">
+                        <a class="pull-left thumb p-thumb">
+                            <img src="img/adidas.jpg" class="img-responsive" />
+                        </a>
+                        <div class="media-body">
+                            <a href="#" class="p-head">Adidas Men's Shorts</a>
+                            <p>Looking for the perfect workout shorts? We have you covered.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-md-9">
+        <section class="panel">
+            <div class="panel-body">
+                <div class="pull-right">
+                    <ul class="pagination pagination-sm pro-page-list">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="row product-list">
+            <div class="col-md-4">
+                <section class="panel">
+                    <div class="pro-img-box">
+                        <img src="img/hoodiefinal.jpg" class="img-responsive" alt="Hoodie" />
+                        <a href="#" class="adtocart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </div>
+
+                    <div class="panel-body text-center">
+                        <h4>
+                            <a href="#" class="pro-title">
+                                Focus Fitness Hoodie
+                            </a>
+                        </h4>
+                        <p class="price">€35.00</p>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-4">
+                <section class="panel">
+                    <div class="pro-img-box">
+                        <img src="img/tshirtfinal.jpg" class="img-responsive" alt="Tshirt" />
+                        <a href="#" class="adtocart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </div>
+
+                    <div class="panel-body text-center">
+                        <h4>
+                            <a href="#" class="pro-title">
+                                Focus Fitness T-Shirt
+                            </a>
+                        </h4>
+                        <p class="price">€15.00</p>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-4">
+                <section class="panel">
+                    <div class="pro-img-box">
+                        <img src="img/tank.jpg" class="img-responsive" alt="Tank Top" />
+                        <a href="#" class="adtocart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </div>
+
+                    <div class="panel-body text-center">
+                        <h4>
+                            <a href="#" class="pro-title">
+                                Focus Fitness Tank Top
+                            </a>
+                        </h4>
+                        <p class="price">€13.00</p>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-4">
+                <section class="panel">
+                    <div class="pro-img-box">
+                        <img src="img/longsleevefinal.jpg" class="img-responsive" alt="Long Sleeve Top" />
+                        <a href="#" class="adtocart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </div>
+
+                    <div class="panel-body text-center">
+                        <h4>
+                            <a href="#" class="pro-title">
+                                Long Sleeve Top
+                            </a>
+                        </h4>
+                        <p class="price">€20.00</p>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-4">
+                <section class="panel">
+                    <div class="pro-img-box">
+                        <img src="img/WomenstFinal.jpg" class="img-responsive" alt="Womans Tshirt" />
+                        <a href="#" class="adtocart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </div>
+
+                    <div class="panel-body text-center">
+                        <h4>
+                            <a href="#" class="pro-title">
+                                Women's Sports Tee
+                            </a>
+                        </h4>
+                        <p class="price">€13.00</p>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-4">
+                <section class="panel">
+                    <div class="pro-img-box">
+                        <img src="img/capfinal.jpg" class="img-responsive" alt="Baseball Cap" />
+                        <a href="#" class="adtocart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </div>
+
+                    <div class="panel-body text-center">
+                        <h4>
+                            <a href="#" class="pro-title">
+                                Focus Fitness Cap
+                            </a>
+                        </h4>
+                        <p class="price">€12.00</p>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-4">
+                <section class="panel">
+                    <div class="pro-img-box">
+                        <img src="img/totefinal2.jpg" class="img-responsive" alt="Tote Bag" />
+                        <a href="#" class="adtocart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </div>
+
+                    <div class="panel-body text-center">
+                        <h4>
+                            <a href="#" class="pro-title">
+                                Focus Fitness Tote Bag
+                            </a>
+                        </h4>
+                        <p class="price">€8.00</p>
+                    </div>
+                </section>
+            </div>
+           
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+ <footer class="footer footer-dark">
+<footer class="text-center text-lg-start bg-light text-muted">
+
+ 
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Focus Fitness
+          </h6>
+          <p>
+            Award Winning Gym in Galway City.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Clothing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Shakes and Powders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Accessories</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset"></a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Focus Fitness, Galway, Galway City, Ireland</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            focusfitness@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +091 234 567 89</p>
+          
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Focus Fitness</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</body>
+</html>
